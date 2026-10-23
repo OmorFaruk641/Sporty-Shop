@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<style>
+		body{
+			background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsBPrphwHsrwyIzPqeOj240iZxGJkwpgwZipXlo3p5ug&s=10");
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
+		form{
+			background-color: rgba(0,0,0,0.5);
+			width: 90%;
+			padding: 50px;
+			border: 5px solid black;
+			border-radius: 10px;
+			color: black;
+			margin: auto;
+		}
+		h1{
+			color: white;
+			width: 100%;
+			text-align: center;
+			background-color: rgba(0,0,0,1);
+			border: 2px solid #ffcf8c;
+			padding: 5px;
+			position: sticky;
+			top: 0;
+		}
+		button[type="submit"]{
+			width: 50%;
+			background: #ffcf8c;
+			padding: 5px 10px;
+			color: black;
+			border: 2px solid black;
+			border-radius: 50px;
+			margin: auto;
+			display: block;
+			margin-top: 20px;
+		}
+		button[type="submit"]:hover{
+			background: green;
+		}
+
+		button[type="reset"]{
+			width: 50%;
+			background: #ffcf8c;
+			padding: 5px 10px;
+			color: black;
+			border: 2px solid black;
+			border-radius: 50px;
+			margin: auto;
+			display: block;
+		}
+		button[type="reset"]:hover{
+			background: red;
+		}
+		input[type="email"],
+		input[type="password"]{
+			width: 90%;
+			border: 2px solid black;
+			padding: 5px 10px;
+			border-radius: 5px;
+		}
+		fieldset{
+			background: rgba(255,215,150,0.8);
+			border: 2px solid black;
+			border-radius: 8px;
+		}
+		h5{
+			color: white;
+			text-align: center;
+		}
+		h3{
+			background: white;
+			border: 2px solid black;
+			border-radius: 10px;
+			padding: 5px 10px;
+		}
+	</style>
+</head>
+<body>
+	<form action="confirm_page.html">
+	
+	<h1>Login</h1>
+	
+		<fieldset> 
+			<legend><h3>E-mail:</h3></legend>
+			<input type="email" id="email" placeholder="Example: omor@gmail.com" required>
+		</fieldset>
+			
+		<fieldset> 
+			<legend><h3>Password:</h3></legend>
+			<input type="password" id="password" placeholder="Example: kjhs324$%&" required>
+		</fieldset>
+		
+		<button type="submit">Log in</button><br>
+		
+		<button type="reset">Cancel</button>
+</button>			
+			<h5>Don't have any account yet? <a href="index.html">Sign in</a></h5>
+	</form>
+</body>
+</html>
